@@ -1,0 +1,14 @@
+version: "1.0"
+services:
+  seankins:
+    build: .
+    privileged: true
+    user: root
+    environment:
+     - JENKINS_OPTS="--httpPort=8081"
+    ports:
+     - 8081:8081
+     - 50000:50000
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
+    container_name: seankins

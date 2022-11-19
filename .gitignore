@@ -1,0 +1,8 @@
+.idea
+venv-new
+venv
+__pycache__
+
+
+# vagrant files
+.vagrant
